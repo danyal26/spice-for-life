@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html dir="LTR" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Danyal Dharani is a Web Developer for small to medium businesses. He specializes in minimalist, sleek designs and prioritizes ease-of-use. ">
+    <meta name="google-site-verification" content="a3lnz3cR3GjaBy02_v3xAVUnVhwBI846lW69sNq3eog" />
+    
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/styles.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Pacifico|Kaushan+Script|Joti+One|Roboto:100,400,700,900" rel="stylesheet">
+
+    <title>Danyal Dharani - Web Developer</title>
+
+</head>
+
+<body>
+    <main role="main">
+        <section id="intro">
+                <div class="container-fluid intro-container">
+
+                    <nav class="navbar p-0 navbar-toggleable-sm navbar-inverse fixed-top" role="navigation">
+                        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navContent" aria-controls="navContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <p class="logo navbar-brand m-0">
+                            Danyal Dharani
+                        </p> <!-- logo -->
+                        <div class="collapse navbar-collapse" id="navContent">
+                            <ul class="navbar-nav mr-auto">
+                                <li id="home-nav" class="nav-item home-nav active mx-2 px-3">
+                                    <a title="link to home section" id="home-link" href="#intro" class="nav-link home-link" href="#">Home</a>
+                                </li>
+                                <li id="skills-nav" class="nav-item skills-nav mx-2 px-3">
+                                    <a title="link to skills section" id="skills-link" href="#skills" class="nav-link skills-link" href="#">Skills</a>
+                                </li>
+                                <li id="contact-nav" class="nav-item contact-nav mx-2 px-3">
+                                    <a title="link to contact section" id="contact-link" href="#contact" class="nav-link contact-link" href="#">Contact</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav> <!-- navigation -->
+
+                    <div class="container-fluid home-container">
+                        <div class="row p-0 m-0 align-items-center" style="height: 100vh;">
+                            <div class="intro-content mx-auto text-center">
+                                <p class="intro-heading">Web Designer & Developer</p>
+                                <p class="intro-text">
+                                    I design and build websites for small to medium businesses.
+                                </p>
+                            </div>
+                            <a title="link to contact section" href="#contact" class="btn contact-btn py-3">
+                                I need a website
+                            </a>
+                        </div> <!-- row -->
+                    </div> <!-- container -->
+        
+                </div> <!-- container -->
+
+        </section> <!-- INTRO - END -->
+
+        <section id="skills" class="container-fluid">
+            <div class="row align-items-center m-0 p-0" style="height: 100vh;">
+                <div class="container-fluid m-0 p-0">
+                    <h1 class="skills-heading text-center m-auto">What I excel in</h1>
+                    <div class="container-fluid m-0 p-0">
+                        <div class="row m-0 p-0">
+                            <div class="ideas col-12 col-lg-4 col-md-4 text-center m-0 p-0">
+                                <img src="images/bulb.svg" alt="Image for ideas" />
+                                <h2>Idea</h2>
+                                <p class="skills-text">
+                                    I get involved with clients to help them turn their great ideas 
+                                    into designs. 
+                                </p>
+                            </div>
+                            <div class="design col-12 col-lg-4 col-md-4 text-center">
+                                <img src="images/brush.svg" alt="Image for design" />
+                                <h2>Design</h2>
+                                <p class="skills-text">
+                                    I work to provide clients with a minimalist, sleek design 
+                                    that puts ease-of-use first.
+                                </p>
+                            </div>
+                            <div class="code col-12 col-lg-4 col-md-4 text-center">
+                                <img src="images/code.svg" alt="Image for code" />
+                                <h2>Code</h2>
+                                <p class="skills-text">
+                                    I work with HTML5, CSS and JavaScript to provide a 
+                                    customized website that meets your needs. 
+                                    I also utilize libraries like Bootstrap and jQuery.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects">
+            My projects
+        </section>
+
+        <section id="contact" class="row m-0 p-0 align-items-center">
+                <div class="m-auto">
+    
+                        <h1 class="contact-heading text-center" class="">Get in touch</h1>
+
+                        <form id="contact-form" method="post" action="contact.php" novalidate>
+                            <fieldset>
+                                <div class="form-group py-2">
+                                    <label for="name" class="form-control-label sr-only">Name: </label>
+                                    <input id="name" name="name" class="form-control" type="text" placeholder="Name" minlenght="2" required/>
+                                </div>
+                                <div class="form-group py-2">
+                                    <label for="email" class="form-control-label sr-only">Email: </label>
+                                    <input id="email" name="email" class="form-control" type="email" placeholder="Email" required/>
+                                </div>
+                                <div class="form-group py-2">
+                                    <label for="phone" class="form-control-label sr-only">Phone: </label>
+                                    <input id="phone" name="phone" class="form-control" type="text" placeholder="Phone" />
+                                </div>
+                                <div class="form-group py-2">
+                                    <label for="message" class="form-control-label sr-only">Message: </label>
+                                    <textarea id="message" name="message" class="form-control" type="text" placeholder="Message" minlenght="2" required></textarea>
+                                </div>
+                                <div id="errorMessages" class="errorMessages text-center py-2 invisible"></div>
+                                <div class="form-group py-2 text-center">
+                                    <input id="submit" class="btn" type="submit" value="Send" />
+                                </div>
+                            </fieldset>
+                        </form>
+                        
+
+                        <div id="contactModal" class="modal fade" role="dialog">
+                            <div class="modal-dialog">
+
+                                <!-- Modal content-->
+                                <div class="modal-content">
+                                    <div class="modal-body text-center my-2">
+                                        <p>Your message has been sent successfully!</p>
+                                        <button type="button" class="btn modal-btn" data-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+        </section>
+
+        <section id="footer" class="text-center">
+            <p class="py-3 m-0">&COPY; 2018 Danyal Dharani</p>
+        </section>
+    </main>
+    
+</body>
+
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/scripts.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+</html>
