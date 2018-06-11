@@ -3,46 +3,11 @@ $(function(){
 
     navUiChange();
 
-    var form = $('#contact-form');
-
-    // -------------------------------- FORM SUBMIT EVENT --------------------------------
-    $(form).submit(function(evt){        
-        evt.preventDefault();
-        var formData = $(form).serialize();
-
-        var isValid = checkValidity();
-        
-        if (isValid){
-
-            $.ajax({
-                type: "POST",
-                url: $(form).attr('action'),
-                data: formData
-            }).done(function(response) {
-                $('#contactModal').modal('show');
-            
-                // Clear the form.
-                $('#name').val('');
-                $('#email').val('');
-                $('#phone').val('');
-                $('#message').val('');
-            }).fail(function(data) {
-        
-                // Set the message text.
-                if (data.responseText !== '') {
-                    alert(data.responseText);
-                } else {
-                    alert('Oops! An error occured and your message could not be sent.');
-                }
-            });
-        }
-
-    });
 
     // -------------------- NAVIGATION BUTTON CLICK (SMALLER DEVICES) -------------------
     $(".navbar-toggler").on("click", function(){
-        var theWindow = $(window).scrollTop();
-        var navIsOpen = $(".navbar-collapse").hasClass("show");
+        let theWindow = $(window).scrollTop();
+        let navIsOpen = $(".navbar-collapse").hasClass("show");
 
         if (theWindow <= 120){
             
@@ -68,13 +33,13 @@ $(function(){
         // $(".nav-item").removeClass("active");
         $(".home-nav").addClass("active");
     });
-    $(".skills-link").on("click", function(){
+    $(".products-link").on("click", function(){
         // $(".nav-item").removeClass("active");
-        $(".skills-nav").addClass("active");
+        $(".products-nav").addClass("active");
     });
-    $(".contact-link").on("click", function(){
+    $(".about-link").on("click", function(){
         // $(".nav-item").removeClass("active");
-        $(".contact-nav").addClass("active");
+        $(".about-nav").addClass("active");
     });
 
     $('a').click(function(){
@@ -86,8 +51,8 @@ $(function(){
 
     // --------------------------- NAVIGATION CHANGE FUNCTION ---------------------------
     function navUiChange(){
-        var theWindow = $(window).scrollTop();
-        var navIsOpen = $(".navbar-collapse").hasClass("show");
+        let theWindow = $(window).scrollTop();
+        let navIsOpen = $(".navbar-collapse").hasClass("show");
 
         // NAVIGATION FURTHER DOWN - SMALL, BLUE
         if(theWindow >= 120){
@@ -99,11 +64,11 @@ $(function(){
                 $(".nav-item").removeClass("active");
                 $(".home-link").addClass("active-white");
             }
-            if ($("#skills-nav").hasClass("active") ){
+            if ($("#products-nav").hasClass("active") ){
                 $(".nav-item").removeClass("active");
                 $(".home-link").addClass("active-white");
             }
-            if ($("#contact-nav").hasClass("active") ){
+            if ($("#about-nav").hasClass("active") ){
                 $(".nav-item").removeClass("active");
                 $(".home-link").addClass("active-white");
             }
@@ -126,70 +91,22 @@ $(function(){
         }
 
         if((theWindow) >= $('#intro').position().top){
-            $(".contact-link").removeClass("active-white");
-            $(".skills-link").removeClass("active-white");
+            $(".products-link").removeClass("active-white");
+            $(".about-link").removeClass("active-white");
             $(".home-link").addClass("active-white");
         }
 
-        if((theWindow) >= $('#skills').position().top){
+        if((theWindow) >= $('#products').position().top){
             $(".home-link").removeClass("active-white");
-            $(".contact-link").removeClass("active-white");
-            $(".skills-link").addClass("active-white");
+            $(".about-link").removeClass("active-white");
+            $(".products-link").addClass("active-white");
         }
 
-        if((theWindow) >= $('#contact').position().top){
+        if((theWindow) >= $('#about').position().top){
             $(".home-link").removeClass("active-white");
-            $(".skills-link").removeClass("active-white");
-            $(".contact-link").addClass("active-white");
+            $(".products-link").removeClass("active-white");
+            $(".about-link").addClass("active-white");
         }
-    }
-
-    // ------------------------------- VALIDATION FUNCTION -------------------------------
-    function checkValidity(){
-
-        var contName = $('#name').val();
-        var contEmail = $('#email').val();
-        var contMessage = $('#message').val();
-        var error = $('#errorMessages');
-
-        var reg = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
-        
-
-        if (contName == '' || contName.length < 2){
-            error.removeClass('invisible');
-            error.addClass('visible');
-            error.html('Your name should have at least 2 characters.');
-            return false;
-        }
-        else {
-            error.removeClass('visible');
-            error.addClass('invisible');
-        }
-
-        if (reg.test(contEmail)){
-            error.removeClass('visible');
-            error.addClass('invisible');
-        }
-        else {
-            error.removeClass('invisible');
-            error.addClass('visible');
-            error.html('Your email address is not valid.');
-            return false;
-        }
-
-        if (contMessage == '' || contMessage.length < 2){
-            error.removeClass('invisible');
-            error.addClass('visible');
-            error.html('Your message should have at least 2 characters.');
-            return false;
-        }
-        else {
-            error.removeClass('visible');
-            error.addClass('invisible');
-        }
-
-        return true;
-
     }
 
 });

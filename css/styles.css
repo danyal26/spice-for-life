@@ -1,10 +1,9 @@
+
 /* COLORS
 
-ANTI-FLASH WHITE - #EFF1F3; rgb(239,241,243)
-PRUSSIAN BLUE - #003459; rgb(0,52,89)
-GUNMETAL - #273043;
-CHARLESTON GREEN - #2A2B2A;
-DAVY'S GREY - #595959;
+ORANGE - EAA613 - (234,166,19)
+FOOTER ORANGE - F4B546 (244,181,70)
+
 */
 
 body {
@@ -12,16 +11,40 @@ body {
     line-height: 1;
 }
 
+
+footer {
+    font-family: 'Roboto', sans-serif;
+    background: #f4b546;
+    color: #FFFFFF;
+}
+
 h1 {
+    padding-top: 6rem;
+    padding-bottom: 3rem;
     font-weight: 100;
     font-size: 3rem;
-    color: #003459;
+    color: #666666;
 }
 
 h2 {
+    color: #999999;
     font-weight: 200;
     font-size: 2rem;
-    color: #003459;
+}
+
+.logo {
+    padding: 1.5rem;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+.logo-small {
+    padding: 0.5rem;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
 }
 
 nav a{
@@ -32,45 +55,8 @@ nav a:hover {
     color: #EFF1F3;
 }
 
-input:-webkit-autofill,
-input:-webkit-autofill:hover, 
-input:-webkit-autofill:focus,
-textarea:-webkit-autofill,
-textarea:-webkit-autofill:hover,
-textarea:-webkit-autofill:focus,
-select:-webkit-autofill,
-select:-webkit-autofill:hover,
-select:-webkit-autofill:focus {
-  transition: background-color 5000s ease-in-out 0s;
-  -webkit-text-fill-color: #EFF1F3;
-}
-
-textarea {
-    resize: none;
-}
-
-.logo {
-    /* font-family: 'Joti One', cursive; */
-    /* font-family: 'Kaushan Script', cursive; */
-
-    font-family: 'Pacifico', cursive;
-
-    font-size: 2.5rem;
-    padding: 0.7em;
-    -webkit-transition: all 0.5s ease;
-    -moz-transition: all 0.5s ease;
-    -o-transition: all 0.5s ease;
-    transition: all 0.5s ease;
-}
-.logo-small {
-    font-size: 1.5rem !important;
-    -webkit-transition: all 0.5s ease;
-    -moz-transition: all 0.5s ease;
-    -o-transition: all 0.5s ease;
-    transition: all 0.5s ease;
-}
-
 .navbar {
+    font-family: 'Roboto', sans-serif;
     -webkit-transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
@@ -82,24 +68,6 @@ textarea {
     padding: 0.7em;
 }
 
-li.nav-item {
-    border-bottom: 2px solid transparent;
-}
-
-li.nav-item.active {
-    border-bottom: 2px solid #003459;
-}
-
-li.nav-item:hover {
-    border-bottom: 2px solid #003459;
-    transition: all .5s ease-in-out;
-}
-
-.active-white {
-    border-bottom: 2px solid transparent !important;
-    color: #FFFFFF !important;
-}
-
 .navbar-inverse .navbar-toggler-icon {
     background-image: url('../images/menu.svg');
 }
@@ -108,173 +76,85 @@ li.nav-item:hover {
     border: 0;
 }
 
+.navbar-scroll {
+    background: rgba(0,0,0,0.8);
+}
+.navbar-scroll-top {
+    background: transparent;
+}
+
+li.nav-item {
+    border-bottom: 2px solid transparent;
+}
+
+li.nav-item.active {
+    border-bottom: 2px solid #EAA613;
+}
+
+li.nav-item:hover {
+    border-bottom: 2px solid #EAA613;
+    transition: all .5s ease-in-out;
+}
+
+.active-white {
+    border-bottom: 2px solid transparent !important;
+    color: #FFFFFF !important;
+}
+
 #intro {
-    background: url('../images/home-bg-2000.png') no-repeat fixed;
+    background: url('../images/home-bg-1350.png') no-repeat fixed;
     background-size: cover;
     color: #EFF1F3;
     height: 100vh;
     min-height: 100vh;
 }
 
-.intro-heading {
+.intro-text {
     font-weight: 100;
     font-size: 4rem;
 }
 
 .intro-container {
     height: 100vh;
-    background-color: rgba(0,0,0,0.6);
-}
-
-#skills {
-    background: #EFF1F3;
-    height: 100vh;
-    min-height: 100vh;
-}
-
-#projects {
-    background: #595959;
-    display: none;
-}
-
-#contact {
-    background: url("../images/contact-bg-2000.png") no-repeat fixed;
-    background-size: cover;
-    min-height: 100vh;
-}
-
-.contact-container {
-    background-color: rgba(0,0,0,0.6);
-    min-height: 100vh;
-}
-
-#footer {
-    background: #003459;
-    color: #EFF1F3;
-}
-
-.intro-text {
-    font-size: 1.2rem;
-    font-weight: 100;
-}
-
-#skills img {
-    width: 70px;
-    height: 70px;
-}
-
-.skills-heading {
-    padding-top: 50px;
-}
-
-.skills-text{
-    color: #595959;
-    padding: 1.5rem 3rem;;
-    font-weight: 100;
-}
-
-.contact-btn {
-    background: rgba(4, 78, 131, 0.8);
-    color: #EFF1F3;
-    right: 30%; 
-    left: 30%;
-    position: absolute;
-    bottom: 40px;
-}
-
-.contact-btn:hover {
-    background: #EFF1F3;
-    color: #003459;
-}
-
-.contact-heading {
-    margin-top: 50px;
-    color: #EFF1F3;
-    margin-bottom: 1em;
-}
-
-.form-control {
-    background-color: transparent;
-    color: #EFF1F3 !important;
-    border-color: #EFF1F3;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 100;
-    transition: all .3s ease-in-out;
-}
-
-.form-control:focus, .form-control:hover {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 100;
-    color: #EFF1F3 !important;
-    border-color: #EFF1F3;
-}
-.form-control:focus {
     background-color: rgba(0,0,0,0.2);
 }
 
-.form-control::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-    color: #EFF1F3;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 100;
-}
-.form-control::-moz-placeholder { /* Firefox 19+ */
-    color: #EFF1F3;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 100;
-}
-.form-control:-ms-input-placeholder { /* IE 10+ */
-    color: #EFF1F3;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 100;
-}
-.form-control:-moz-placeholder { /* Firefox 18- */
-    color: #EFF1F3;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 100;
-}
-#message {
-    height: 100px;
-}
-
-
-input[type="submit"] {
-    background: rgba(4, 78, 131, 0.8);
-    width: 180px;
-    color: #EFF1F3;
-}
-
-input[type="submit"]:hover {
-    cursor: pointer;
+#products {
+    padding-bottom: 3rem;
     background: #EFF1F3;
-    color: #003459;
 }
 
-#contact fieldset {
-    min-width: 250px;
+.prod-box {
+    max-width: 12.5rem;
+    max-height: 12.5rem;
+    width: 12.5rem;
+    height: 12.5rem;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    padding: 0;
 }
 
-.navbar-scroll {
-    background: rgba(0,52,89,0.8);
-}
-.navbar-scroll-top {
-    background: transparent;
+.prod-image {
+    width: 6.5rem;
+    height: 6.5rem;
+    margin-bottom: 1rem;
 }
 
-.errorMessages {
+#about {
+    padding-bottom: 5rem;
+}
+
+#about .card {
+    margin-bottom: 2em !important;
+    max-height: 17em;
+    height: 17rem;
+    max-width: 17rem;
+    padding: 3em 1em;
+}
+
+.card-text {
     font-family: 'Roboto', sans-serif;
-    font-weight: 100;
-    color: #EFF1F3;
-}
-
-.modal-btn {
-    background: rgb(0, 109, 187);
-    cursor: pointer;
-    color: #EFF1F3;
-}
-
-.modal-content {
-    background: rgba(239,241,243,0.9);
-    color: #003459;
+    color: #999999;
 }
 
 
@@ -282,46 +162,25 @@ input[type="submit"]:hover {
 
 @media (max-width: 768px) {
     h1 {
-        font-size: 1.5rem;
+        font-size: 2rem;
     }
     h2 {
-        font-size: 1rem;
+        font-size: 1.3rem;
         font-weight: 400;
     }
     .row {
         margin-left: -100px;
         margin-right: -100px;
     }
-    .intro-heading {
-        font-size: 2rem;
-    }
     .intro-text {
-        font-size: 1rem;
-    }
-    .skills-heading {
-        margin-top: 0 !important;
-    }
-    .skills-text{
-        padding: 0 !important;
-    }
-    .contact-btn {
-        right: 10%; 
-        left: 10%;
-        position: absolute;
-        bottom: 40px;
-    }
-    #skills img {
-        width: 40px;
-    }
-    .logo {
-        font-size: 1.5rem;
+        font-size: 2rem;
     }
     li.nav-item {
         padding-top: 0.5rem;
         padding-bottom: 0.5rem;
         border-bottom: 2px solid transparent;
     }
-    
+
     li.nav-item.active {
         border-bottom: 2px solid transparent;
     }
@@ -338,20 +197,8 @@ input[type="submit"]:hover {
     .intro-content {
         padding: 0 10rem;
     }
-    .intro-heading {
+    .intro-text {
         margin-bottom: 2rem;
-    }
-    #skills h1 {
-        padding-bottom: 4rem;
-    }
-    #skills img {
-        margin-bottom: 2rem;
-    }
-    #contact fieldset {
-        min-width: 350px;
-    }
-    .skills-text {
-        font-size: 1.2rem;
     }
 }
 
@@ -359,12 +206,7 @@ input[type="submit"]:hover {
 
 @media (min-width: 1200px) and (max-width: 2000px){
     #intro {
-        background: url('../images/home-bg-2000.png') no-repeat fixed;
-        background-position: center center;
-        background-size: cover;
-    }
-    #contact {
-        background: url("../images/contact-bg-2000.png") no-repeat fixed;
+        background: url('../images/home-bg-1350.png') no-repeat fixed;
         background-position: center center;
         background-size: cover;
     }
@@ -375,20 +217,10 @@ input[type="submit"]:hover {
         background-position: center center;
         background-size: cover;
     }
-    #contact {
-        background: url("../images/contact-bg-1200.png") no-repeat fixed;
-        background-position: center center;
-        background-size: cover;
-    }
 }
 @media (min-width: 500px) and (max-width: 800px) {
     #intro {
         background: url('../images/home-bg-800.png') no-repeat fixed;
-        background-position: center center;
-        background-size: cover;
-    }
-    #contact {
-        background: url("../images/contact-bg-800.png") no-repeat fixed;
         background-position: center center;
         background-size: cover;
     }
@@ -399,20 +231,10 @@ input[type="submit"]:hover {
         background-position: center center;
         background-size: cover;
     }
-    #contact {
-        background: url("../images/contact-bg-500.png") no-repeat fixed;
-        background-position: center center;
-        background-size: cover;
-    }
 }
 @media (max-width: 200px) {
     #intro {
         background: url('../images/home-bg-200.png') no-repeat fixed;
-        background-position: center center;
-        background-size: cover;
-    }
-    #contact {
-        background: url("../images/contact-bg-200.png") no-repeat fixed;
         background-position: center center;
         background-size: cover;
     }
