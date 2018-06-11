@@ -1,24 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a9e20d80-0c11-4172-9ae9-44f164e50a39" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/brush.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/bulb.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/code.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/contact-bg-1200.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/contact-bg-200.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/contact-bg-2000.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/contact-bg-500.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/contact-bg-800.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/home-bg-1200.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/home-bg-1200.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/home-bg-200.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/home-bg-200.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/home-bg-2000.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/home-bg-500.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/home-bg-500.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/home-bg-800.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/home-bg-800.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/scripts.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/scripts.js" afterDir="false" />
-    </list>
+    <list default="true" id="a9e20d80-0c11-4172-9ae9-44f164e50a39" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -31,8 +14,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="59">
-              <caret line="4" column="74" lean-forward="true" selection-start-line="4" selection-start-column="74" selection-end-line="4" selection-end-column="74" />
+            <state relative-caret-position="206">
+              <caret line="170" lean-forward="true" selection-start-line="170" selection-end-line="170" />
               <folding>
                 <element signature="e#7893#7899#0" expanded="true" />
               </folding>
@@ -69,8 +52,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>intro</find>
-      <find>§</find>
       <find>home</find>
       <find>intro-text</find>
       <find>intro-heading</find>
@@ -99,6 +80,8 @@
       <find>card-te</find>
       <find>.svg</find>
       <find>img</find>
+      <find>aria</find>
+      <find>sr</find>
     </findStrings>
     <replaceStrings>
       <replace>home</replace>
@@ -247,12 +230,12 @@
       <workItem from="1528652565675" duration="8954000" />
       <workItem from="1528676827839" duration="19000" />
       <workItem from="1528677138566" duration="109000" />
-      <workItem from="1528713523748" duration="701000" />
+      <workItem from="1528713523748" duration="951000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17436000" />
+    <option name="totallyTimeSpent" value="17686000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="10" y="23" width="1260" height="689" extended-state="0" />
@@ -474,8 +457,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="59">
-          <caret line="4" column="74" lean-forward="true" selection-start-line="4" selection-start-column="74" selection-end-line="4" selection-end-column="74" />
+        <state relative-caret-position="206">
+          <caret line="170" lean-forward="true" selection-start-line="170" selection-end-line="170" />
           <folding>
             <element signature="e#7893#7899#0" expanded="true" />
           </folding>
